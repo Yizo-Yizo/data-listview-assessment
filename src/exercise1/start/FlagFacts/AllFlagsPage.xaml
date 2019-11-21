@@ -5,6 +5,11 @@
         Title="Fun with Flags"
         x:Class="FlagFacts.AllFlagsPage">
 
-    <ListView ItemsSource="{Binding Flags}" SelectedItem="{Binding CurrentFlag, Mode=TwoWay}"/>
+    <ListView ItemsSource="{Binding Flags}" SelectedItem="{Binding CurrentFlag, Mode=TwoWay}">
+    <ListView.ItemTemplate>
+        <DataTemplate>
 
-    </ContentPage>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
