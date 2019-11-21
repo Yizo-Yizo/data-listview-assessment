@@ -36,6 +36,11 @@ namespace FlagData
             set { ChangePropertyValue(ref _imageUrl, value); }
         }
 
+        public override string ToString()
+        {
+            return Country;
+        }
+
         /// <summary>
         /// The date this flag was adopted
         /// </summary>
@@ -52,8 +57,9 @@ namespace FlagData
                     // CallerMemberNameAttribute on the RaisePropertyChanged method.
                     RaisePropertyChanged();
                 }
-            }
-        }
+         }
+
+ }
 
         /// <summary>
         /// Whether the flag includes an image/shield as part of the design
