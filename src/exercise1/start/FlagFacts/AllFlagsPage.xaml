@@ -8,8 +8,11 @@
     <ListView ItemsSource="{Binding Flags}" SelectedItem="{Binding CurrentFlag, Mode=TwoWay}">
     <ListView.ItemTemplate>
         <DataTemplate>
-
-        </DataTemplate>
+                <ImageCell DetailColor="Gray"
+                     ImageSource="{Binding ImageUrl, Converter={StaticResource irConverter}}"
+                     Text="{Binding Country}"
+                     Detail="{Binding DateAdopted, StringFormat='Adopted on {0:d}'}"/>
+         </DataTemplate>
     </ListView.ItemTemplate>
     </ListView>
 </ContentPage>
